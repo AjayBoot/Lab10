@@ -51,11 +51,11 @@
     var client = factory.client();
 
     client.on(client.Event.SDK_READY, function() {
-      var treatment = client.getTreatment('Double_Column_Layout');
+      var treatment = client.getTreatment('Background_Color');
 
       if (treatment === 'on') {
         // Insert code for on treatment
-        document.querySelector('main').className = 'double-column';
+        document.querySelector('body').style.backgroundColor = "blue";
 
       } else if (treatment === 'off') {
         // Insert code for off treatment
